@@ -1,0 +1,3 @@
+[submodule "APC-Propeller-Model-Creator"]
+	path = APC-Propeller-Model-Creator
+	url = git@github.com:amc0121/APC-Propeller-Model-Creator.git

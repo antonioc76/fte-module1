@@ -19,13 +19,17 @@ pwm_bins = reshape(pwm_ss, n, []);
 RPM_avgs = mean(RPM_bins);
 pwm = mode(pwm_bins);
 
-plot(pwm, RPM_avgs, 'LineWidth', 2);
+plot(pwm, RPM_avgs, 'LineWidth', 1.5);
+
+grid on
 
 hold on
 
 scatter(pwm, RPM_avgs, 'filled');
 
 legend('trend', 'data');
+
+set(gca, 'FontSize', 18, 'FontWeight', 'bold');
 
 xlabel('PWM ({\mu}sec)')
 ylabel('Speed (RPM)')
